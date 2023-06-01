@@ -19,4 +19,3 @@ Jenkins restart policy:
         1044  systemctl --user status jenkins-blueocean
 
 * Always use the --user flag whenever we are interacting with the user genrated services.
-* 
