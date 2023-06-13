@@ -5,6 +5,8 @@ pipeline {
     stage('Stage 1') {
       steps {
         sh "podman ps"
+        sh "ls ."
+        sh "git clone https://github.com/kiranaaditya/docker-test ."
         sh "podman build --tag mytest:test -f ./Dockerfile"
         sh "podman images"
       }
