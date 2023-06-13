@@ -19,3 +19,15 @@ Jenkins restart policy:
         1044  systemctl --user status jenkins-blueocean
 
 * Always use the --user flag whenever we are interacting with the user genrated services.
+
+
+
+About starting jenkins without a CSRF protection:
+https://unix.stackexchange.com/questions/444177/how-to-disable-the-csrf-protection-in-jenkins-by-default
+
+Podman docs:
+
+* Remote podman executable - https://docs.podman.io/en/latest/markdown/podman-remote.1.html
+* Issues with remote podman socket - https://github.com/containers/podman/issues/12493
+* Issues with remote podman socket - https://github.com/containers/podman/issues/4234
+* Podman networking - https://www.tutorialworks.com/podman-host-networking/

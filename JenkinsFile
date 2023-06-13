@@ -1,10 +1,13 @@
+// Jenkinsfile (Declarative Pipeline)
 pipeline {
-    agent any 
-    stages {
-        stage('Stage 1') {
-            steps {
-                echo 'Hello world! I am Kiran' 
-            }
-        }
+  agent any
+  stages {
+    stage('Stage 1') {
+      steps {
+        sh "podman ps"
+        sh "podman build --tag mytest:test -f ./Dockerfile"
+        sh "podman images"
+      }
     }
+  }
 }
